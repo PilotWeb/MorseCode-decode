@@ -1,0 +1,22 @@
+decodeMorse = function(morseCode){
+  var morseCode =morseCode.trim();
+  var letter = ""; var arr = [];
+  for(var i = 0; i <= morseCode.length; i++){
+     if((morseCode.charAt(i) == " ") && (morseCode.charAt(i-1) == " ")&& (morseCode.charAt(i-2) == " ")){      
+     continue;
+     }else if (morseCode.charAt(i) == " "|| i == morseCode.length){
+       arr.push(letter);       
+       letter = "";
+     }else
+     letter += morseCode.charAt(i);
+  }
+   for(var i = 0; i < arr.length; i++){
+    if(arr[i] == ""){
+     arr[i] = " ";
+    } else{
+    arr[i] = MORSE_CODE[arr[i]]];
+    }
+    }
+   console.log(arr);
+   return arr.join("");
+}
