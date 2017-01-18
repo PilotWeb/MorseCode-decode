@@ -1,0 +1,28 @@
+var n=+prompt("¬ведите n", 0);
+var SerNumber=[];
+for ( var i=2; i<=n; i++){
+SerNumber.push(i);
+};
+var SimpleNumber=[2];
+var p=2;
+while(p*p<n){
+	var NextNumber=[];
+for (var i=0; i<SerNumber.length; i++){
+	if(SerNumber[i]%p==0){
+		continue}else{
+		NextNumber.push(SerNumber[i]);	
+};
+};//end for
+SerNumber=NextNumber;
+p=NextNumber[0];
+SimpleNumber.push(p);
+};//end while
+ for (var i=1; i<NextNumber.length; i++){
+		SimpleNumber.push(NextNumber[i])};
+alert(SimpleNumber);
+var sum=0;
+ for (var i=0; i<SimpleNumber.length; i++){
+		sum+=SimpleNumber[i]};
+alert(sum);
+
+
