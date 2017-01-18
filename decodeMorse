@@ -3,7 +3,7 @@ decodeMorse = function(morseCode){
   var letter = ""; var arr = [];
   for(var i = 0; i <= morseCode.length; i++){
      if((morseCode.charAt(i) == " ") && (morseCode.charAt(i-1) == " ")&& (morseCode.charAt(i-2) == " ")){      
-     continue;
+      continue;
      }else if (morseCode.charAt(i) == " "|| i == morseCode.length){
        arr.push(letter);       
        letter = "";
