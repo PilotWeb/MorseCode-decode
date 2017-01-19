@@ -14,7 +14,7 @@ decodeMorse = function(morseCode){
     if(arr[i] == ""){
      arr[i] = " ";
     } else{
-    arr[i] = MORSE_CODE[arr[i]]];
+    arr[i] = MORSE_CODE[arr[i]];
     }
     }
    console.log(arr);
