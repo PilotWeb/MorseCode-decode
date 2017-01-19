@@ -1,4 +1,6 @@
 decodeMorse = function(morseCode){
+
+  
   var morseCode =morseCode.trim();
   var letter = ""; var arr = [];
   for(var i = 0; i <= morseCode.length; i++){
